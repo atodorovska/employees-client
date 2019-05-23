@@ -1,0 +1,11 @@
+<h2>Employees Management Application</h2>
+
+<div *ngIf="!login" id="toLogIn">
+  <a class="btn btns" (click)="goToLoginView()">Log in</a>
+</div>
+
+<div *ngIf="login">
+  <h3>Welcome {{login.name}}!</h3>
+  <a href="http://localhost:8080/logout">Log out</a>
+</div>
+
