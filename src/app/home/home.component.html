@@ -1,11 +1,28 @@
-<h2>Employees Management Application</h2>
+<div id="container-top">
 
-<div *ngIf="!login" id="toLogIn">
-  <a class="btn btns" (click)="goToLoginView()">Log in</a>
+  <h2>Employees Management Application</h2>
+  <div *ngIf="login" id="toLogOut">
+    <h3>Welcome {{login.name}}!</h3>
+    <form method="POST" action="http://localhost:8080/api/logout">
+      <button type="submit" class="btn btn-dark">Log out</button>
+    </form>
+
+  </div>
+
 </div>
 
-<div *ngIf="login">
-  <h3>Welcome {{login.name}}!</h3>
-  <a href="http://localhost:8080/logout">Log out</a>
+<div id="container-bottom">
+
+  <div *ngIf="!login" id="toLogIn">
+    <a class="btn btns" (click)="goToLoginView()">Log in</a>
+    <a class="btn btns" (click)="goToRegisterView()">Register</a>
+  </div>
+
 </div>
 
+<div *ngIf="login" id="search-container">
+  <label for="searchBar">Search</label>
+  <input id="searchBar" type="text" name="searchBar">
+  <button class="btn btn-info">Go</button>
+
+</div>

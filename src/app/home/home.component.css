@@ -1,0 +1,49 @@
+#container-top{
+  background-color: darkslateblue;
+  color: ghostwhite;
+  font-family: Tahoma, SansSerif;
+  text-align: center;
+  height: 190px;
+}
+#container-top h2{
+  padding: 50px 0 0 0;
+  margin: 0;
+}
+#container-bottom{
+  background-color: ghostwhite;
+  color: darkslateblue;
+  font-family: Tahoma, SansSerif;
+  text-align: center;
+
+}
+#toLogIn{
+  border: 2px solid darkslateblue;
+  color: darkslateblue;
+  height: 40px;
+}
+
+#toLogOut button{
+  text-align: right;
+}
+
+#toLogIn a:hover, #toLogOut a:hover{
+  font-weight: bold;
+}
+
+input{
+  width: 20%;
+  height: 37px;
+  padding: 12px 20px;
+  margin-top: 11px;
+  margin-left: 15px;
+  display: inline;
+  border: 1px solid #ccc;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  box-sizing: border-box;
+}
+
+label{
+  padding-left: 15px;
+}
+
